@@ -48,6 +48,10 @@ public class JobCandidate {
 		return "\n" + this.name + " " + NumberFormat.getCurrencyInstance().format(this.salaryRequired)
 				+ (this.teacherName.contains("June") ? " learned from the best👌" : " learned somehow🤷");
 	}
+	
+	public String getName() {
+		return name;
+	}
 
 	public String getTeacherName() {
 		return teacherName;
